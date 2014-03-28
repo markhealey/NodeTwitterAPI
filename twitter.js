@@ -1,3 +1,5 @@
+var request = require('request');
+
 /** 
  * Call Twitter API
  *
@@ -13,7 +15,7 @@ function twitter(req,res){
 	var oauth = { 
 		consumer_key: TWITTER_CONSUMER_KEY,
 		consumer_secret: TWITTER_CONSUMER_SECRET
-    };
+    	};
 
 	//encode keys
 	oauth.consumer_key = encodeURIComponent(oauth.consumer_key);
